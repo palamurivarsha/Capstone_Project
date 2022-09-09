@@ -1,4 +1,4 @@
-# Online Shop Application
+# Shop For Home
 
 #### A full-stack Online Shop web application using Spring Boot 2 and Angular 7. 
 This is a Single Page Appliaction with client-side rendering. It includes backend and frontend two seperate projects on different branches.
