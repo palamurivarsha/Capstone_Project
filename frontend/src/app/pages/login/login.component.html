@@ -1,0 +1,55 @@
+<div class="container">
+
+
+  <div style="width:40%; margin: 25px auto">
+
+    <div class="alert alert-danger" *ngIf="isInvalid">
+      Invalid username and password.
+    </div>
+    <div class="alert alert-info" *ngIf="isLogout">
+      You have been logged out.
+    </div>
+    <div class="loginform">
+      <h1 align="center" class="h1class display-4 mb-5">Sign In</h1>
+      <form #form='ngForm' (ngSubmit)="onSubmit()">
+        <hr>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email"
+            required autofocus [(ngModel)]="model.username" #email="ngModel" autocomplete="email"
+            (keydown.space)="$event.preventDefault()">
+          <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+            Email is required
+          </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control form-control-lg" id="password" name="password"
+            autocomplete="password" placeholder="Password" required [(ngModel)]="model.password" #password='ngModel'
+            (keydown.space)="$event.preventDefault()">
+          <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+            Password is required
+          </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <div>
+            <input type="checkbox" id="remember_me" name="remember-me" [(ngModel)]="model.remembered">
+            <label for="remember_me" class="inline">Remember me</label>
+            <a class="float-right" routerLink="/register">Sign Up</a>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <button [disabled]="!form.form.valid" type="submit" class="btn btn-lg btn-primary btn-block">Sign In</button>
+        </div>
+        <hr>
+      </form>
+
+    </div>
+
+
+
+  </div>
+</div>

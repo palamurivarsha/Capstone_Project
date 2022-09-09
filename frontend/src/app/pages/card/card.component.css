@@ -1,0 +1,46 @@
+.fa-heart {
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.container {
+    align-items: center;
+}
+
+.text-center {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.card{
+  background-color: #ffffff;
+  border: 3px solid black;
+}
+
+.btn{
+  background-color: #D1512D;
+  font-weight: bold;
+  color: white;
+}
+
+.btn:hover{
+  background-color: #eeac99;
+  font-weight: bold;
+  color: rgb(4, 46, 59);
+}
+
+.search {
+  background-color: #f1f1f1;
+}
+
+.search:hover {
+  position: relative;
+  background-color: #fbd7d7d0;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+*{
+  font-weight: bold;
+  font-size: small;
+}

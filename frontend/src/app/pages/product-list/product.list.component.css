@@ -1,0 +1,24 @@
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  .search {
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 35px;
+  }
+
+  .search:hover {
+    position: relative;
+    background-color: #fbd7d7d0;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  *{
+    font-weight: bold;
+    font-size: small;
+  }
